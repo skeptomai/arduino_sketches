@@ -168,8 +168,8 @@ void loop() {
       // this also sets the newNMEAreceived() flag to false
     char *stringptr = GPS.lastNMEA();
     uint8_t stringsize = strlen(stringptr);
-    if (!GPS.parse(stringptr))   
-      return;  // we can fail to parse a sentence in which case we should just wait for another
+    //if (!GPS.parse(stringptr))   
+    //  return;  // we can fail to parse a sentence in which case we should just wait for another
     //Serial.println(stringptr); 
     // Sentence parsed! 
 //    if (LOG_FIXONLY && !GPS.fix) {
